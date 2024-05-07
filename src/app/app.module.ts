@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './MyComponent/todos/todos.component';
 import { TodoItemComponent } from './MyComponent/todo-item/todo-item.component';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { TodoItemComponent } from './MyComponent/todo-item/todo-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
   providers: [
     provideClientHydration()
@@ -22,3 +25,5 @@ import { TodoItemComponent } from './MyComponent/todo-item/todo-item.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
